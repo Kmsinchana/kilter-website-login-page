@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kilter website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balthazar&family=Kanit:ital,wght@1,900&family=Roboto+Condensed:ital@1&family=Rubik+Bubbles&family=Sofia+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background: url('fitness2.png') no-repeat center fixed;
+            background-size: cover;
+        }
+        .left{
+            color: white;
+            display: inline-block;
+            position: absolute;/* to move it to right*/
+            left: 12px;
+            top: 20px;/*border: 4px solid red;*/
+        }
+        .left img{
+            width: 98px;
+            left: 3px;
+        }
+        .midle{
+            display: block;
+            width: 36%;
+            height: 12p;
+            margin: 20px auto;
+            color: white;
+            border: 6px solid paleturquoise;
+        }
+        .right{
+            color: black;
+            display: inline-block;
+            position: absolute;/* to move it to right*/
+            right: 0px;
+            top: 10px;
+        }
+        .norm li{
+            display: inline-block;/*to make the content appear in one line*/
+            padding: 16px 16px;
+        }
+        .norm li a{
+            color: white;
+            text-decoration: none;/* to remove the underline*/
+            
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .norm li a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        .fi{
+            color:white;
+            position: absolute;
+            top: 44px;
+            left: 4px;
+        }
+        .bts{
+            width: 100px;
+            border:3px solid black;
+            border-radius: 19px;
+            cursor: pointer;
+           background-color:rgb(250, 234, 250);
+            padding: 2px 33px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: medium;
+        }
+        .bts:hover
+        {
+            color: cornflowerblue;
+        }
+        .container{
+            border-radius: 10px;
+            display:block;
+            width: 300px;
+            height: 240px;
+            margin: 150px auto;
+            padding: 20px 15px;
+            color: rgba(245, 179, 245, 0.904);
+            text-align: center;
+        }
+        .formg input{
+            padding: 12px 15px;
+            width: 200px;
+            margin: 3px;
+            text-decoration: none;
+            border-radius: 12px;
+            border:none;
+            outline: none;
+        }
+        .formg input:hover{
+            border: 3px solid black;
+        }
+        .gt:hover{
+           background-color: bisque;
+        }
+        #pd{
+            font-style: italic;
+            text-decoration: underline;
+            font-size:large;
+        }
+        .pc{
+            width: 80px;
+        }
+        .ff{
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="left">
+        <img src="logo1.png" alt="">
+        <h3 class="fi">
+            mvs fitness
+        </h3>
+    </div>
+    <div class="midle">
+        <ul class="norm">
+           <li><a href="#" >HOME</a></li>
+           <li><a href="#">CLASSES</a></li>
+           <li><a href="#">OUR TEAM</a></li>
+           <li><a href="#">FITNESSCHALLENGE</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <button class="bts">help</button>
+        <input type="text" name="" class="pc" placeholder="search...">
+        <button class="ff">search</button>
+    </div>
+    <div class="container" id="pd">JOIN OUR BEST FITNESS ACADEMY
+    <form action="noactio.php">
+        <div class="formg">
+            <br>
+            <input type="text" name="" placeholder="enter the name">
+        </div>
+        <div class="formg">
+            <input type="text" name="" placeholder="enter the age">
+        </div>
+        <div class="formg">
+            <input type="text" name="" placeholder="enter the gender">
+        </div>
+        <div class="formg">
+            <input type="text" name="" placeholder="enter the place">
+            </div>
+            <button class="gt">submit</button>
+        </div>
+    </form>
+    </header>
+</body>
+</html>
